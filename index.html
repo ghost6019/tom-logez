@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tom Logez — Portfolio BTS CRSA</title>
+  <meta name="description" content="Portfolio de Tom Logez, étudiant en BTS CRSA à Beauvais. Automatisme, conception SolidWorks, robotique et projets web.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="wrap header__inner">
+      <a class="logo" href="#accueil">Tom <span>Logez</span></a>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="#accueil">Accueil</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#projets">Projets</a>
+        <a href="#competences">Compétences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn--small" href="cv.html">CV</a>
+      <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Étudiant BTS CRSA · 2e année · Beauvais</p>
+          <h1>Conception, automatisme et mise en service.</h1>
+          <p class="lead">
+            Je conçois, je comprends les systèmes, et je vais jusqu’à la mise en œuvre.
+            Stage de 6 semaines déjà réalisé chez DS Smith. Je termine actuellement
+            ma 2e année de BTS CRSA pour obtenir le diplôme.
+          </p>
+          <div class="hero__actions">
+            <a class="btn" href="#contact">Me contacter</a>
+            <a class="btn btn--ghost" href="cv.html">Télécharger le CV</a>
+          </div>
+        </div>
+        <aside class="hero__panel" aria-label="Infos clés">
+          <div class="hero__identity">
+            <div class="photo" data-photo>
+              <img src="assets/photo.jpg" alt="Tom Logez">
+              <span>TL</span>
+            </div>
+            <div>
+              <p class="hero__name">Tom Logez</p>
+              <p class="hero__role">BTS Conception et Réalisation de Systèmes Automatiques</p>
+            </div>
+          </div>
+          <ul class="facts">
+            <li><span>Âge</span> 19 ans</li>
+            <li><span>Stage réalisé</span> DS Smith · Saint-Just-en-Chaussée</li>
+            <li><span>Période</span> 18 mai – 26 juin 2026</li>
+            <li><span>Mobilité</span> Hauts-de-France / Île-de-France</li>
+            <li><span>Contact</span> 07 87 13 40 65</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="wrap strip__inner">
+        <p><strong>SolidWorks</strong> CAO · assemblages · mises en plan</p>
+        <p><strong>Roboguide</strong> simulation robotique</p>
+        <p><strong>Machine Expert</strong> automate · E/S · mise en service</p>
+        <p><strong>Web</strong> HTML/CSS · Figma · Shopify</p>
+      </div>
+    </section>
+
+    <section class="section" id="parcours">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow">Parcours</p>
+          <h2>Une première expérience en milieu industriel, puis des projets concrets.</h2>
+        </div>
+
+        <article class="stage">
+          <div class="stage__meta">
+            <p class="eyebrow">Expérience</p>
+            <h3>Stage BTS CRSA — 1re année</h3>
+            <p class="stage__where">DS Smith Packaging · Saint-Just-en-Chaussée (60)</p>
+            <p class="stage__when">18 mai – 26 juin 2026</p>
+          </div>
+          <div class="stage__body">
+            <p>
+              Immersion dans une cartonnerie industrielle spécialisée dans la fabrication
+              d’emballages en carton ondulé. Un site de production automatisé, avec des
+              lignes, des contraintes de sécurité et un vrai rythme d’atelier.
+            </p>
+            <ul>
+              <li>Découverte des lignes de production automatisées et du fonctionnement des équipements.</li>
+              <li>Participation au suivi, à la maintenance et au diagnostic des installations.</li>
+              <li>Compréhension des process industriels et du travail en équipe sur site.</li>
+              <li>Application des consignes de sécurité en environnement de production.</li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="timeline">
+          <article>
+            <span>2025 – 2027</span>
+            <h3>BTS CRSA</h3>
+            <p>Lycée Paul Langevin, Beauvais. 2e année en cours. Conception mécanique, automatisme, robotique, mise en service.</p>
+          </article>
+          <article>
+            <span>Bac</span>
+            <h3>STI2D</h3>
+            <p>Lycée Paul Langevin, Beauvais. Option technologique, bases industrielles et conception.</p>
+          </article>
+          <article>
+            <span>Collège</span>
+            <h3>Brevet — mention AB</h3>
+            <p>Collège Condorcet, Bresles (60).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="projets">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow">Projets</p>
+          <h2>Du cahier des charges à un rendu utilisable.</h2>
+          <div class="filters" role="tablist" aria-label="Filtrer les projets">
+            <button type="button" class="is-on" data-filter="all">Tous</button>
+            <button type="button" data-filter="academique">Académiques</button>
+            <button type="button" data-filter="independant">Indépendants</button>
+          </div>
+        </div>
+
+        <div class="cases">
+          <article class="case" data-cat="academique">
+            <div class="case__gallery">
+              <button type="button" class="case__main" data-lightbox="assets/projets/academique/carport-1.png">
+                <img src="assets/projets/academique/carport-1.png" alt="Modélisation SolidWorks du carport solaire">
+              </button>
+              <div class="case__thumbs">
+                <button type="button" data-lightbox="assets/projets/academique/carport-1.png"><img src="assets/projets/academique/carport-1.png" alt=""></button>
+                <button type="button" data-lightbox="assets/projets/academique/carport-blender.png"><img src="assets/projets/academique/carport-blender.png" alt=""></button>
+                <button type="button" data-lightbox="assets/projets/academique/modelisation-3d.png"><img src="assets/projets/academique/modelisation-3d.png" alt=""></button>
+              </div>
+            </div>
+            <div class="case__copy">
+              <p class="project__tag">Académique · SolidWorks</p>
+              <h3>Carport solaire</h3>
+              <p>Modélisation 3D d’un carport solaire : respect du cahier des charges, assemblages, cotation, mises en plan et maquette. Travail aussi sur d’autres volumes 3D (Blender / SolidWorks).</p>
+              <ul class="tags">
+                <li>SolidWorks</li>
+                <li>Conception mécanique</li>
+                <li>Maquette</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="case" data-cat="academique">
+            <div class="case__gallery">
+              <button type="button" class="case__main" data-lightbox="assets/projets/academique/roboguide.png">
+                <img src="assets/projets/academique/roboguide.png" alt="Simulation robotique Roboguide">
+              </button>
+            </div>
+            <div class="case__copy">
+              <p class="project__tag">Académique · Robotique</p>
+              <h3>Roboguide &amp; GRAFCET</h3>
+              <p>Simulation de trajectoires robotisées, programmation et schémas GRAFCET pour concevoir des séquences automatisées.</p>
+              <ul class="tags">
+                <li>Roboguide</li>
+                <li>GRAFCET</li>
+                <li>Machine Expert</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="case" data-cat="academique">
+            <div class="case__gallery">
+              <button type="button" class="case__main" data-lightbox="assets/projets/academique/figma-1.png">
+                <img src="assets/projets/academique/figma-1.png" alt="Maquette Figma du projet académique">
+              </button>
+              <div class="case__thumbs">
+                <button type="button" data-lightbox="assets/projets/academique/figma-1.png"><img src="assets/projets/academique/figma-1.png" alt=""></button>
+                <button type="button" data-lightbox="assets/projets/academique/figma-2.png"><img src="assets/projets/academique/figma-2.png" alt=""></button>
+              </div>
+            </div>
+            <div class="case__copy">
+              <p class="project__tag">Académique · Figma</p>
+              <h3>Maquette de projet technique</h3>
+              <p>Parcours visuel d’un projet : existant, croquis, modélisation, schéma cinématique, chaîne d’information et équipements.</p>
+              <ul class="tags">
+                <li>Figma</li>
+                <li>UI</li>
+                <li>Présentation</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="case" data-cat="independant">
+            <div class="case__gallery">
+              <button type="button" class="case__main" data-lightbox="assets/projets/independant/shopify-accueil.png">
+                <img src="assets/projets/independant/shopify-accueil.png" alt="Boutique Shopify — mise en avant produits">
+              </button>
+              <div class="case__thumbs">
+                <button type="button" data-lightbox="assets/projets/independant/shopify-accueil.png"><img src="assets/projets/independant/shopify-accueil.png" alt=""></button>
+                <button type="button" data-lightbox="assets/projets/independant/shopify-produit.jpg"><img src="assets/projets/independant/shopify-produit.jpg" alt=""></button>
+                <button type="button" data-lightbox="assets/projets/independant/shopify-visuel.png"><img src="assets/projets/independant/shopify-visuel.png" alt=""></button>
+                <button type="button" data-lightbox="assets/projets/independant/shopify-logo.png"><img src="assets/projets/independant/shopify-logo.png" alt=""></button>
+              </div>
+            </div>
+            <div class="case__copy">
+              <p class="project__tag">Indépendant · E-commerce</p>
+              <h3>Boutique Shopify</h3>
+              <p>Création d’un site e-commerce : thème, landing page, tunnel de vente, mise en avant produits, maquettes et visuels produits.</p>
+              <ul class="tags">
+                <li>Shopify</li>
+                <li>Figma</li>
+                <li>HTML/CSS</li>
+                <li>CapCut</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="case" data-cat="independant">
+            <div class="case__gallery">
+              <button type="button" class="case__main" data-lightbox="assets/projets/independant/pc-2.jpg">
+                <img src="assets/projets/independant/pc-2.jpg" alt="Montage d’un PC">
+              </button>
+              <div class="case__thumbs">
+                <button type="button" data-lightbox="assets/projets/independant/pc-1.png"><img src="assets/projets/independant/pc-1.png" alt=""></button>
+                <button type="button" data-lightbox="assets/projets/independant/pc-2.jpg"><img src="assets/projets/independant/pc-2.jpg" alt=""></button>
+                <button type="button" data-lightbox="assets/projets/independant/pc-3.jpg"><img src="assets/projets/independant/pc-3.jpg" alt=""></button>
+                <button type="button" data-lightbox="assets/projets/independant/pc-4.jpg"><img src="assets/projets/independant/pc-4.jpg" alt=""></button>
+              </div>
+            </div>
+            <div class="case__copy">
+              <p class="project__tag">Indépendant · Hardware</p>
+              <h3>Montage PC</h3>
+              <p>Assemblage d’un PC complet : choix des composants, montage, installation et mise en service.</p>
+              <ul class="tags">
+                <li>Hardware</li>
+                <li>Assemblage</li>
+                <li>Diagnostic</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="case" data-cat="independant">
+            <div class="case__copy case__copy--alone">
+              <p class="project__tag">Indépendant · Web</p>
+              <h3>Sites vitrine artisans</h3>
+              <p>Conception et intégration de sites pour des artisans (plomberie / chauffage et finitions) : structure, design, contact et devis.</p>
+              <ul class="tags">
+                <li>HTML/CSS</li>
+                <li>UI</li>
+                <li>Formulaire</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="competences">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow">Compétences</p>
+          <h2>Des outils d’atelier, et des outils numériques.</h2>
+        </div>
+        <div class="skills">
+          <article>
+            <h3>Conception</h3>
+            <p>SolidWorks : modélisation 3D, assemblages, mises en plan, cotation. Bases Blender.</p>
+          </article>
+          <article>
+            <h3>Automatisme</h3>
+            <p>Machine Expert Basic, GRAFCET, configuration, gestion d’E/S, mise en service.</p>
+          </article>
+          <article>
+            <h3>Robotique</h3>
+            <p>Roboguide : programmation, simulation de trajectoires et de mouvements.</p>
+          </article>
+          <article>
+            <h3>Web &amp; design</h3>
+            <p>HTML/CSS, Figma, Shopify, Canva, CapCut, Flair AI. Sites vitrine et e-commerce.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact">
+      <div class="wrap contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Une question, un projet : écrivez-moi.</h2>
+          <p class="lead">Réponse rapide. Basé en Hauts-de-France, mobile aussi en Île-de-France.</p>
+          <ul class="contact__list">
+            <li><a href="mailto:tom.logez@gmail.com">tom.logez@gmail.com</a></li>
+            <li><a href="tel:+33787134065">07 87 13 40 65</a></li>
+            <li><a href="https://ghost6019.github.io/tom-logez/">ghost6019.github.io/tom-logez</a></li>
+          </ul>
+        </div>
+        <form class="form" id="contactForm" novalidate>
+          <label for="name">Nom</label>
+          <input id="name" name="name" type="text" required autocomplete="name" placeholder="Votre nom">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder="vous@email.fr">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Parlez-moi de votre projet ou de votre besoin."></textarea>
+          <button class="btn" type="submit">Envoyer</button>
+          <p class="form__note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>© 2026 Tom Logez — BTS CRSA</p>
+      <a href="https://github.com/ghost6019/tom-logez">GitHub</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox__close" aria-label="Fermer">Fermer</button>
+    <img alt="">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
