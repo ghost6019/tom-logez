@@ -222,7 +222,7 @@ body {
 }
 
 section {
-  margin-top: 6.4mm;
+  margin-top: 5.4mm;
 }
 
 section h2 {
@@ -245,7 +245,7 @@ section h2 {
 .job,
 .edu,
 .project {
-  margin-bottom: 3.6mm;
+  margin-bottom: 3mm;
 }
 
 .job:last-child,
