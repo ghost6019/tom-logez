@@ -74,12 +74,60 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-filter]").forEach((button) => {
     button.addEventListener("click", () => {
       const filter = button.getAttribute("data-filter");
-      document.querySelectorAll("[data-filter]").forEach((el) => el.classList.toggle("is-on", el === button));
+      document.querySelectorAll("[data-filter]").forEach((el) => {
+        const on = el === button;
+        el.classList.toggle("is-on", on);
+        el.setAttribute("aria-pressed", String(on));
+      });
       document.querySelectorAll(".case").forEach((card) => {
         card.classList.toggle("is-hidden", filter !== "all" && card.getAttribute("data-cat") !== filter);
       });
     });
   });
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduceMotion && "IntersectionObserver" in window) {
+    const targets = document.querySelectorAll(
+      ".section__head, .rail__item, .schools article, .work, .skills article, .contact > *"
+    );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-in");
+          observer.unobserve(entry.target);
+        });
+      },
+      { rootMargin: "0px 0px -8% 0px", threshold: 0.08 }
+    );
+    targets.forEach((el) => {
+      el.classList.add("reveal");
+      observer.observe(el);
+    });
+  }
+
+  const track = document.querySelector(".ticker__track");
+  if (track) {
+    [...track.children].forEach((item) => {
+      const clone = item.cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      track.appendChild(clone);
+    });
+  }
+
+  if (window.matchMedia("(hover: hover)").matches) {
+    document.querySelectorAll(".rail__item, .work, .skills article").forEach((card) => {
+      card.addEventListener("pointermove", (event) => {
+        const rect = card.getBoundingClientRect();
+        card.style.setProperty("--mx", `${event.clientX - rect.left}px`);
+        card.style.setProperty("--my", `${event.clientY - rect.top}px`);
+      });
+      card.addEventListener("pointerleave", () => {
+        card.style.removeProperty("--mx");
+        card.style.removeProperty("--my");
+      });
+    });
+  }
 
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = lightbox?.querySelector("img");
@@ -90,6 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const src = button.getAttribute("data-lightbox");
       if (!lightbox || !lightboxImg || !src) return;
       lightboxImg.src = src;
+      lightboxImg.alt = button.querySelector("img")?.alt || "Agrandissement du projet";
       lightbox.removeAttribute("hidden");
     });
   });
